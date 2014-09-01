@@ -1,0 +1,9 @@
+Especificaciones para instalacion de proyecto
+
+	*Los proyectos de google y compatibilidad ya estan referenciados, tambien se deben agregar.
+	*Para el error de API de google, instalar el API9 desde del SDK Manager.
+	*SDK Target	:17
+	*SDK Compile	:17
+	*MiN SDK 	:13
+	*GOOGLE API KEY	:AIzaSyDbb11ZZ-GHyyu6QhplRfGNQrEV5EEQim4(ya está incluida en el manifest)
+

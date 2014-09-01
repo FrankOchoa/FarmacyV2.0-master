@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.psm.farmacy.Home" >
+    <item android:id="@+id/OrderDate" android:title="OrdenarFecha"></item>
+    <item android:id="@+id/OrderUser" android:title="OrderUser"></item>
+
+</menu>

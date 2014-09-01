@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Farmacy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="gen_ok">Aceptar</string>
+    <string name="gen_cancel">Cancelar</string>    
+    <string name="home_txtWelcome">Bienvenu</string>
+    <string name="navDrw_Profile">Perfil</string>
+    <string name="navDrw_Medication">Tratamientos</string>
+    <string name="navDrw_Drugstores">Farmacias</string>
+    <string name="navDrw_Configuration">Configuración</string>
+    <string name="navDrw_Home">Inicio</string>
+    <string name="navDrw_About">Acerca de</string>
+    <string name="conf_lang">Idioma</string>
+    <string name="conf_lang_dialog">Elige el idioma de la aplicación</string>
+    <string name="conf_noti">Notificaciones</string>
+    <string name="conf_gps">GPS</string>
+    <string name="conf_gps_summary">Permitir a la aplicación consultar mi hubicación vía gps</string>
+    <string name="conf_theme">Tema</string>
+    <string name="conf_theme_summary">Tema</string>
+    <string name="conf_theme_dialog">Elige un tema para la aplicación</string>
+    <string name="conf_noti_summary">Activa o desactiva las notificaciones recordatorias</string>
+    <string name="conf_langSpanish">Español</string>
+    <string name="conf_langEnglish">Inglés</string>
+    <string name="conf_langFrench">Francés</string>
+    <string name="conf_theme_pink">Spring pink</string>
+    <string name="conf_theme_blue">Beach blue</string>
+    <string name="conf_theme_black">Dark Black</string>
+    <string name="conf_theme_red">Fire red</string> 
+</resources>
