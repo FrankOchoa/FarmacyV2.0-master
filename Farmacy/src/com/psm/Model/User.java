@@ -15,6 +15,9 @@ public class User {
 		this.sexo = sexo;
 	}
 	
+	public User() {
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -57,7 +57,7 @@ public class drwItemAdapter  extends BaseAdapter{
 		  
 	    if(convertView == null) {
 	      LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	      vi = inflater.inflate(R.layout.drw_item, null);
+	      vi = inflater.inflate(R.layout.item_menu_drawer, null);
 	    }
 	    drwItem item=list.get(position);
 	    ImageView image=(ImageView)vi.findViewById(R.id.iconImage);
@@ -75,7 +75,7 @@ public class drwItemAdapter  extends BaseAdapter{
 		  
 	    if(convertView == null) {
 	      LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	      vi = inflater.inflate(R.layout.drw_item, null);
+	      vi = inflater.inflate(R.layout.item_menu_drawer, null);
 	    }
 	    drwItem item=list.get(position);
 	    ImageView image=(ImageView)vi.findViewById(R.id.iconImage);

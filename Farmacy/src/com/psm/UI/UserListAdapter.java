@@ -47,16 +47,15 @@ public class UserListAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		View vi=convertView;
 		  
 	    if(convertView == null) {
-	      LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	      vi = inflater.inflate(R.layout.userlist_item, null);
+	     
+	      convertView = View.inflate(parent.getContext(), R.layout.item_user_list, null);
 	    }
 	    User item=listUser.get(position);
-	    TextView text=(TextView) vi.findViewById(R.id.tvUsername);
+	    TextView text=(TextView) convertView.findViewById(R.id.tvUsername);
 	    text.setText(item.getUsuario());
-		return vi;
+		return convertView;
 	}
 
 }

@@ -2,10 +2,8 @@ package com.psm.farmacy;
 
 import java.util.ArrayList;
 import java.util.Locale;
-
 import com.psm.UI.drwItem;
 import com.psm.UI.drwItemAdapter;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import com.psm.UI.LoginDialogFragment;
 
 public class ConfigurationFragment extends Fragment{
 	private Spinner spnLang;
@@ -34,6 +33,7 @@ public class ConfigurationFragment extends Fragment{
 	private CheckBox chkNotification;
 	private Activity actParent;
 	private SharedPreferences sharedPref;
+	private Button btnSync;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater,
@@ -45,6 +45,7 @@ public class ConfigurationFragment extends Fragment{
 		btnSave=(Button)vi.findViewById(R.id.btnSaveChanges);
 		chkGps=(CheckBox) vi.findViewById(R.id.chkGps);
 		chkNotification=(CheckBox) vi.findViewById(R.id.chkNotifications);
+		btnSync=(Button)vi.findViewById(R.id.btnSync);
 		actParent=getActivity();
 		
 		spnLang.setAdapter(new drwItemAdapter(getActivity(), InflateSpinnerLanguage()));
@@ -161,6 +162,24 @@ public class ConfigurationFragment extends Fragment{
 				
 			}
 		});
+    
+    	btnSync.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {		
+				try
+				{
+					LoginDialogFragment dFragment = new LoginDialogFragment();
+					dFragment.loginDialog(getActivity(), "Acceso").show();
+                	//dFragment.show(getActivity().getSupportFragmentManager(), "Dialog Fragment");
+				}
+				catch(Exception ex)
+				{
+					ex.getMessage();					
+				}
+			}
+		});
+    
     }
 
     
